@@ -104,13 +104,10 @@
         
         
         /*Projects*/
-        .ContainerProjects .ContainerPj .Project{
-            display: flex;
-            flex-direction: row;
-        }
         .ContainerProjects .ContainerPj .Project > img{
            flex:1 1 auto;
-           width: 500px;
+           width: 100%;
+           display: block;
         }
         .ContainerProjects .ContainerPj .Project > div{
             flex: 1 1 auto;
@@ -131,6 +128,17 @@
         .ContainerCertificados .CertificadoImg{
             width: 50%;
             float: right;
+        }
+        @media(min-width:1000px){
+        .ContainerProjects .ContainerPj .Project{
+            display: flex;
+            flex-direction: row;
+        }
+        .ContainerProjects .ContainerPj .Project > img{
+           flex:1 1 auto;
+           width: 500px;
+           display: block;
+        }
         }
     </style>
     <div class="ContainerBriefcase">
@@ -158,7 +166,7 @@
             <div class="ContainerInformationMe"  id="SobreMi" name="SombreMi">
                 <h1>Wilson Herney Castro Cabrera</h1><br/>
                 <h4>Tecnólogo en sistemas de información | Medellín-Colombia | wilsoncastro0710@gmail.com</h4><br/>
-                <h5>Soy una persona responsable, creativa, con iniciativa y puntualidad, asumo con agrado los retos y metas; con buen manejo de relaciones interpersonales, facilidad para trabajar en equipo, en condiciones de alta presión, así como para resolver problemas eficientemente. Amante a la programación y muy autodidacta. </h5>
+                <p>Soy una persona responsable, creativa, con iniciativa y puntualidad, asumo con agrado los retos y metas; con buen manejo de relaciones interpersonales, facilidad para trabajar en equipo, en condiciones de alta presión, así como para resolver problemas eficientemente. Amante a la programación y muy autodidacta. </p>
             </div>
             <hr/>
             <div class="ContainerTecnologies">
@@ -189,7 +197,6 @@
                 <h1>Proyectos</h1>
                 <div class="ContainerPj">
                     <div class="Project">
-                        <img src="./anik.png"/>
                         <div>
                             <h2>Anik Web</h2>
                             <small>React.js | Html | Css | Javascript | SQLserver | Node Js | Api Rest full | MongoDB</small>
@@ -202,6 +209,7 @@
                                 <a href="www.anikmakeup.com">www.anikmakeup.com</a>
                             </p>
                         </div>
+                        <img src="./anik.png"/>
                     </div>
                     <hr/>
                     <div class="Project">
