@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio</title>
+    <link  rel="icon"   href="./react.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html {
+        scroll-behavior: smooth;
+        }
+        body{
+            margin:0px !important;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .ContainerTwo{
+            max-width: 1000px;
+            margin:auto;
+        }
+        .ContainerBriefcase .ContainerYou{
+            height: 100vh;
+            width: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .ContainerBriefcase .Container-info{
+            font-size: 25px;
+            position: absolute;
+            background:rgba(0,0,0,.6);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:#fff;
+        }
+        
+        h1,h2,h3,h4,h5,h6{
+            margin:5px;
+            text-align: center;
+        }
+        .ContainerBriefcase .Container-info a{
+            color:#fff;
+        }
+        .ContainerBriefcase .ContainerYou > img{
+            height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+        .ContainerBriefcase .LinkedinImg{
+            width: 50px;  
+            border:1px solid #fff;
+            background:#fff;
+            border-radius: 100%;
+        }
+        .ContainerBriefcase .GithubImg{
+            width: 50px;
+            border:1px solid #fff;
+            background:#fff;
+            border-radius: 100%;
+        }
+        .ContainerYou small{
+            cursor: pointer;
+            border-bottom: 2px solid #fff;
+        }
+
+        /*Me*/
+        .ContainerTwo{
+            padding:20px;
+        }
+        .ContainerTwo .ContainerInformationMe{
+            text-align: center;
+        }
+
+        /*Tegnologies*/
+        .ContainerTecnologies{
+            text-align: center;
+        }
+        .ContainerTecnologies > div{
+            display:flex;
+            flex-direction: row;
+        }
+        .ContainerTecnologies .ContainerFrontend{
+            flex:1 1 auto;
+        }
+        .ContainerTecnologies .ContainerBackend{
+            flex:1 1 auto;
+            text-align: center;
+        }
+        .ContainerTecnologies .ContainerBackend > img{
+            width: 70px;
+        }
+        .ContainerTecnologies .ContainerDataBases{
+            flex:1 1 auto;
+        }
+        .ContainerTecnologies img{
+            width: 50px;
+        }
+        
+        
+        /*Projects*/
+        .ContainerProjects .ContainerPj .Project > img{
+           flex:1 1 auto;
+           width: 100%;
+           display: block;
+        }
+        .ContainerProjects .ContainerPj .Project > div{
+            flex: 1 1 auto;
+            padding:20px;
+        }
+        .ContainerProjects .ContainerRepositorios{
+            display:flex;
+        }
+        .ContainerProjects .ContainerRepositorios a{
+            margin:5px;
+            color:#000;
+        }
+
+        /*Certificados*/
+        .ContainerCertificados{
+            padding: 20px;
+        }
+        .ContainerCertificados .CertificadoImg{
+            width: 50%;
+            float: right;
+        }
+        @media(min-width:1000px){
+        .ContainerProjects .ContainerPj .Project{
+            display: flex;
+            flex-direction: row;
+        }
+        .ContainerProjects .ContainerPj .Project > img{
+           flex:1 1 auto;
+           width: 500px;
+           display: block;
+        }
+        }
+    </style>
+    <div class="ContainerBriefcase">
+        <div class="ContainerYou">
+            <img src="./Landing.jpg"/>
+            <div class="Container-info">
+                <div>
+                <h1>Wilson Herney Castro Cabrera</h1>
+                <h2>Desarrollador Full Stack Javascript</h2>
+                <a href="https://www.linkedin.com/in/wilson-herney-castro-cabrera-73560a19a/"><img class="LinkedinImg" src='./linkedin.png'/></a>
+                <a href="https://github.com/whccc"><img class="GithubImg" src='./github.png'/></a>
+                
+                <div>
+                    <small onClick="window.location.hash='#SobreMi'">Sobre mí</small>
+                    <small  onClick="window.location.hash='#Proyectos'">Proyectos</small>
+                    <small  onClick="window.location.hash='#Certificados'">Certificados</small>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    
+        <div class="ContainerTwo">
+            <hr/>
+            <div class="ContainerInformationMe"  id="SobreMi" name="SombreMi">
+                <h1>Wilson Herney Castro Cabrera</h1><br/>
+                <h4>Tecnólogo en sistemas de información | Medellín-Colombia | wilsoncastro0710@gmail.com</h4><br/>
+                <p>Soy una persona responsable, creativa, con iniciativa y puntualidad, asumo con agrado los retos y metas; con buen manejo de relaciones interpersonales, facilidad para trabajar en equipo, en condiciones de alta presión, así como para resolver problemas eficientemente. Amante a la programación y muy autodidacta. </p>
+            </div>
+            <hr/>
+            <div class="ContainerTecnologies">
+                <h1>Habilidades</h1>
+                <div>
+                    <div class="ContainerFrontend">
+                        <h2>Frontend</h2>
+                        <img src="html.png"/>
+                        <img src="css.png"/>
+                        <img src="archivo.png"/>
+                        <img src="react.png"/>
+                    </div>
+                    <div class="ContainerBackend">
+                        <h2>Backend</h2>
+                        <img src="nodejs.png"/>
+                    </div>
+                    <div class="ContainerDataBases">
+                        <h2>Data Bases</h2>
+                        <img src="mysql.png"/>
+                        <img src="sql.png"/>
+                        <img src="mongodb.png"/>
+                        <img src="sqlserver.png"/>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="ContainerProjects" id="Proyectos" name="Proyectos">
+                <h1>Proyectos</h1>
+                <div class="ContainerPj">
+                    <div class="Project">
+                        <div>
+                            <h2>Anik Web</h2>
+                            <small>React.js | Html | Css | Javascript | SQLserver | Node Js | Api Rest full | MongoDB</small>
+                            <p>
+                                Aplicación e-commerce.Este desarrollo se llevo
+                                acabo durante 6 meses.Se implemento con metologia agil scrum.
+                                La aplicación la desarrolle desde el tema frontend, backend y base de datos.
+                                Hubo un acompañamiento de Diseñador y levantamiento de requerimientos.Por otro lado,se integrandolo
+                                con base de datos Mongodb y SQLserver.<br/>
+                                <a target="_blank" href="https://www.anikmakeup.com">www.anikmakeup.com</a>
+                            </p>
+                        </div>
+                        <img src="./anik.png"/>
+                    </div>
+                    <hr/>
+                    <div class="Project">
+                        <div>
+                            <h2>TomaPed</h2>
+                            <small>React.js | Html | Css | Javascript | Mysql | Node Js | Api Rest full</small>
+                            <p>
+                                Aplicación para la toma de pedidos.Esta compuesta por dos modulos.El administrativo
+                                y vendedor.Esta aplicación contempla todo un proceso de crud de ciudades,zonas,vendedores,
+                                clientes,pedidos,productos.
+                                <br/>
+                                Links repositorios:
+                                <div class="ContainerRepositorios">
+                                    <a target="_blank" href="https://github.com/whccc/TomaPed">
+                                         <label>Frontend</label><br/>
+                                         <img class="GithubImg" src='./github.png'/>
+                                    </a>
+                                    <a target="_blank" href="https://github.com/whccc/TomaPedBackend">
+                                        
+                                        <label>Backend</label><br/>
+                                        <img class="GithubImg" src='./github.png'/>
+                                    </a>
+                                </div>
+                            </p>
+                        </div>
+
+                        <img src="./tomaped.png"/>
+                        
+                    </div>
+                    <div class="Project">
+                        <div>
+                            <h2>En Desarrollo 10-12-2020</h2>
+                            <small>React.js | Html | Css | Javascript | Next.js | MongoDB | Node Js | Api Rest full | Firebase Storage</small>
+                            <p>
+                                Aplicación para la toma de pedidos tipo E-Commerce
+                                <br/>
+                                <div class="ContainerRepositorios">
+                                    <a target="_blank"  href="https://makeupsolpage.vercel.app/">
+                                         <label>Page</label><br/>
+                                         <img  src='./solpage.png' style="width: 100%;"/>
+                                    </a>
+                                    <a target="_blank" href="https://makeupsoladministrator.vercel.app/Productos">
+                                        
+                                        <label>Administrador</label><br/>
+                                        <img  src='./soladmistrador.png' style="width: 100%;"/>
+                                    </a>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr/>
+            <div class="ContainerCertificados" id="Certificados" name="Certificados">
+                <h1>Certificados</h1>
+                <img class="CertificadoImg" src='./certificado1.png'/>
+                <img class="CertificadoImg" src='./certificado2.png'/>
+                <img class="CertificadoImg" src='./certificado3.png'/>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
